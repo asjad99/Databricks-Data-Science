@@ -21,6 +21,7 @@ Following skills are required to deliver ML projects in cloud  production settin
 - [Model deployment patterns](https://docs.databricks.com/aws/en/machine-learning/mlops/deployment-patterns)
 - [Databricks Asset Bundles resources](https://docs.databricks.com/aws/en/dev-tools/bundles/resources)
 
+- [GenAI](GenAI-Databricks.md)
 
 ### Resources
 
