@@ -8,7 +8,7 @@
 - MLflow (experiment tracking, model versioning, model registry)
 - CI/CD implementation for ML/model code
 - Model monitoring & observability (drift detection, performance monitoring, data quality checks)
-Model serving in production environments
+- Model serving in production environments
 - Data and model governance
 - Unity Catalog (permissions management, data lineage, model lineage)
 - ML lifecycle management
