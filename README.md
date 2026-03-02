@@ -25,6 +25,6 @@ Following skills are required to deliver ML projects in cloud  production settin
 ### Resources
 
 - [Designing machine learning systems](https://github.com/chiphuyen/dmls-book/blob/main/resources.md)
-- 
+- [MLOps-Tools]()
 - [IEEE MLOPS](https://ieeexplore.ieee.org/document/10081336)
 - [CMU Machine Learning in Production](https://ckaestne.github.io/seai/)
