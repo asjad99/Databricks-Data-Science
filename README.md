@@ -17,7 +17,7 @@
 - End-to-end Machine Learning (ML) productionization
 
 
-![](Screenshot 2026-03-02 at 10.24.08 am.png)
+![](big_picture.png)
 
 
 
