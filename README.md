@@ -1,5 +1,42 @@
-### Topics (work in progress): 
+### Data
 
+
+### Fundamentals 
+
+TODO: add from blog posts, .tex file 
+
+### Real World Challenges
+![Real World ML](real-world-ml.png)
+
+
+### Learn Data Science 
+
+## Data Mining
+
+## PowerBI or tableau
+
+## 
+
+## Learn Machine Learning
+
+
+
+### Stats and Probability 
+
+### Fundamentals 
+
+TODO: add from blog posts, .tex file 
+
+### Real World Challenges
+![Real World ML](real-world-ml.png)
+
+
+### Resources 
+
+
+
+
+### Topics (work in progress): 
 
 
 - Building and maintaining automated ML pipelines
