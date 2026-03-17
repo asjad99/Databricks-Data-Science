@@ -36,7 +36,14 @@ This section focuses on the lifecycle of developing and deploying machine learni
 
 Core ML concepts and workflows including:
 
-- Feature engineering
+- Feature engineering Methods and workflows for extracting useful signals from raw data.
+
+Topics include:
+        - Feature engineering pipelines
+        - Feature stores
+        - Data preprocessing
+        - Dataset versioning
+
 - Training workflows
 - Evaluation strategies
 - Experiment tracking
@@ -118,17 +125,6 @@ Topics include:
 ---
 
 
-
-# Data Mining & Feature Engineering
-
-Methods and workflows for extracting useful signals from raw data.
-
-Topics include:
-
-- Feature engineering pipelines
-- Feature stores
-- Data preprocessing
-- Dataset versioning
 
 
 # Git & CI/CD
