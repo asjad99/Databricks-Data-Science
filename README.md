@@ -10,6 +10,8 @@ Spark + Delta Lake + MLflow + Cloud orchestration
 
 Some notes can be found in Building Data Products with Databricks 
 
+----
+
 # 1. Dashboards 
 
 
@@ -19,16 +21,29 @@ Some notes can be found in Building Data Products with Databricks
 # 2. Machine Learning
 
 
-**Introduction and Fundamentals:**
+**Introduction, Big Picture and Fundamentals of ML In Databricks:**
 
-This section focuses on the lifecycle of developing and deploying machine learning models.
+This section focuses on the lifecycle of developing and deploying machine learning models: 
 
+● Identify the benefits of creating feature store tables at the account level in Unity Catalog in
+Databricks vs at the workspace level
+
+● Create a feature store table in Unity Catalog
+
+● Write data to a feature store table
+
+● Train a model with features from a feature store table.
+
+● Score a model using features from a feature store table.
+
+● Describe the differences between online and offline feature tables
+
+
+**Further reading:**
 
 - BLog post [Long intro to machine learning]()
 - Paper [A Few Useful Things to Know About Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 - Book Chapter [Chapter 5: Machine Learning Basics] 
-- Book [Think Stats (For EDA)]
-- Book Appendix [ML Process] 
 - Book [Designing Machine Learning Systems]
 - Paper [Machine Learning Operations (MLOps): Overview, Definition, and Architecture](https://epub.uni-bayreuth.de/id/eprint/7577/1/Machine_Learning_Operations_MLOps_Overview_Definition_and_Architecture.pdf)
 
@@ -37,8 +52,15 @@ TODO: add from .tex file
 Core ML concepts and workflows including:
 
 
-### A. Data preprocessing
+### A. Summary of Workflow 
 
+- Book Appendix [ML Process] 
+
+### A. EDA and Data preprocessing
+
+- Book [Think Stats (For EDA)]
+- CMU data visualization tips 
+  
 ● Compute summary statistics on a Spark DataFrame using .summary() or dbutils data
 summaries
 
@@ -60,15 +82,58 @@ appropriate.
 ● Identify scenarios where log scale transformation is appropriate
 
 
-###  Feature engineering
+### Model Development and Feature engineering
 
+**
+
+● Identify how AutoML facilitates model/feature selection.
+● Identify the advantages AutoML brings to the model development process
+
+
+
+** Decision Trees and Ensemble Models ** 
+
+
+
+● Use ML foundations to select the appropriate algorithm for a given model scenario
+
+● Develop a training pipeline
+
+● Use common classification metrics: F1, Log Loss, ROC/AUC, etc
+
+● Use common regression metrics: RMSE, MAE, R-squared, etc.
+
+● Assess the impact of model complexity and the bias variance tradeoff on model
+performance
+
+● Perform cross-validation as a part of model fitting.
+
+
+**Readings:** 
+
+- Intro to statistical learning
+- 
+
+
+**Model Tuning **
+
+● Compare estimators and transformers
+● Use Hyperopt's fmin operation to tune a model's hyperparameters
+● Perform random or grid search or Bayesian search as a method for tuning hyperparameters.
+● Parallelize single node models for hyperparameter tuning
+● Describe the benefits and downsides of using cross-validation over a train-validation split.
+● Identify the number of models being trained in conjunction with a grid-search and
+cross-validation process.
+
+● Choose the most appropriate metric for a given scenario objective
+● Identify the need to exponentiate log-transformed variables before calculating evaluation
+metrics or interpreting predictions
+
+
+
+- Feature Store
 - Feature engineering Methods and workflows for extracting useful signals from raw data.
-
-- Feature Store 
-
-### Modeling and Hyperparameter tuning 
-
-
+- Hyperparameter tuning 
 - Training workflows
 - Evaluation strategies
 
@@ -76,7 +141,9 @@ appropriate.
 ## Real-World Machine Learning Challenges
 
 Common issues encountered in production ML systems:
+● Identify methods to mitigate data imbalance in training data
 
+- Explainibility 
 - Data drift
 - Concept drift
 - Training–serving skew
@@ -89,6 +156,19 @@ Common issues encountered in production ML systems:
 ## MLflow, Model Registry & Reproducibility
 
 Tools and practices for managing models in production.
+
+● Identify the best practices of an MLOps strategy
+● Identify the advantages of using ML runtimes
+● Identify benefits of registering models in the Unity Catalog registry over the workspace
+registry
+● Identify scenarios where promoting code is preferred over promoting models and vice
+versa
+● Set or remove a tag for a model
+● Promote a challenger model to a champion model using aliases
+● Identify the best run using the MLflow Client API.
+● Manually log metrics, artifacts, and models in an MLflow Run.
+● Identify information available in the MLFlow UI
+● Register a model using the MLflow Client API in the Unity Catalog registry
 
 - Experiment tracking
 - Reproducibility
