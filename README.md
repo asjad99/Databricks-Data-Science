@@ -41,14 +41,22 @@ Core ML concepts and workflows including:
 
 ● Compute summary statistics on a Spark DataFrame using .summary() or dbutils data
 summaries
+
 ● Remove outliers from a Spark DataFrame based on standard deviation or IQR
+
 ● Create visualizations for categorical or continuous features
+
 ● Compare two categorical or two continuous features using the appropriate method
+
 ● Compare and contrast imputing missing values with the mean or median or mode value
+
 ● Impute missing values with the mode, mean, or median value
+
 ● Use one-hot encoding for categorical features
+
 ● Identify and explain the model types or data sets for which one-hot encoding is or is not
 appropriate.
+
 ● Identify scenarios where log scale transformation is appropriate
 
 
