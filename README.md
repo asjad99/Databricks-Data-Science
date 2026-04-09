@@ -4,13 +4,25 @@ This repository contains structured notes, guides, and references for developing
 
 It focuses on practical aspects of **Machine Learning Operations (MLOps)** including governance, experimentation, deployment, monitoring, and automation within the Databricks ecosystem.
 
+Databricks is essentially:
 
-# Platform Architecture
+Spark + Delta Lake + MLflow + Cloud orchestration
 
-![](big_picture.png)
+## How data is processed (Spark and SQL)
 
+- Paper [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing to understand Spark’s philosophy]()
+- Paper [Spark SQL: Relational Data Processing in Spark to understand modern APIs]()
+- Paper [Structured Streaming: A Declarative API for Real-Time Applications in Apache Spark]()
+- Paper [MapReduce: Simplified Data Processing on Large Clusters]()
+- Paper [Catalyst: A Query Optimization Framework for Spark SQL]()
 
-## Unity Catalog & Data Governance
+  
+## Delta Lake and Unity Catalog
+
+- Paper [Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores]()
+- Paper [The Databricks Lakehouse Platform]()
+- Paper [The Google File System]()
+
 
 Key components for managing data and model assets within Databricks.
 
@@ -23,6 +35,7 @@ Topics include:
   - Access control and permissions management
   - Data lineage tracking
   - Model lineage tracking
+    
 - **Data governance**
 - **Model governance**
 
@@ -30,9 +43,27 @@ Topics include:
 
 TODO: add from blog posts, .tex file 
 
+# Platform Architecture
+
+![](big_picture.png)
+
+
+**Introduction:**
+
 This section focuses on the lifecycle of developing and deploying machine learning models.
 
+
+- [Long intro to machine learning]()
+- Paper [A Few Useful Things to Know About Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
+- Book Chapter [Chapter 5: Machine Learning Basics] 
+- Book [Think Stats (For EDA)]
+- Book Appendix [ML Process] 
+- Book [Designing Machine Learning Systems]
+- Paper [Machine Learning Operations (MLOps): Overview, Definition, and Architecture](https://epub.uni-bayreuth.de/id/eprint/7577/1/Machine_Learning_Operations_MLOps_Overview_Definition_and_Architecture.pdf)
+
+
 ## Fundamentals
+
 
 Core ML concepts and workflows including:
 
@@ -72,6 +103,10 @@ Common issues encountered in production ML systems:
 ![Real World ML](real-world-ml.png)
 
 ## Model Registry & Reproducibility
+
+- Paper [MLflow: A Platform for Managing the Machine Learning Lifecycle]()
+- Paper [KeystoneML: Optimizing Pipelines for Large-Scale Advanced Analytics]()
+
 
 Tools and practices for managing models in production.
 
@@ -122,11 +157,6 @@ Topics include:
 - Alerting mechanisms
 - Migration and system upgrade support
 
----
-
-
-
-
 # Git & CI/CD
 
 Best practices for version control and continuous delivery of ML systems.
@@ -139,22 +169,6 @@ Topics include:
 - Infrastructure and model deployment
 - Environment reproducibility
 
-# Statistics & Probability
-
-Foundational statistical concepts required for machine learning:
-
-- Probability distributions
-- Hypothesis testing
-- Statistical inference
-- Sampling
-- Evaluation metrics
-
-
-
-
-
-
----
 
 
 
