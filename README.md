@@ -69,7 +69,7 @@ appropriate.
 - CMU data visualization tips
   
 
-### Model Development and Feature engineering
+### C. Model Development and Feature engineering
 
 **Training a baseline model:**
 
@@ -84,7 +84,7 @@ appropriate.
 
 ● Use ML foundations to select the appropriate algorithm for a given model scenario
 
-● Develop a training pipeline
+● Develop a training pipeline and  Training workflows
 
 ● Use common classification metrics: F1, Log Loss, ROC/AUC, etc
 
@@ -103,7 +103,7 @@ performance
 - ML for developers chapter on decision trees 
 
 
-## Model/Hyperparameter tuning  
+### D. Model/Hyperparameter tuning  
 
 ● Compare estimators and transformers
 
@@ -125,7 +125,7 @@ metrics or interpreting predictions
 
 
 
-##  Feature Store
+####  E. Feature Store
 
 ● Identify the benefits of creating feature store tables at the account level in Unity Catalog in
 Databricks vs at the workspace level
@@ -141,11 +141,10 @@ Databricks vs at the workspace level
 ● Describe the differences between online and offline feature tables
 
 
-- Training workflows
 - Evaluation strategies
 
 
-## Real-World Machine Learning Challenges
+### D. Real-World Machine Learning Challenges
 
 Common issues encountered in production ML systems:
 ● Identify methods to mitigate data imbalance in training data
@@ -160,21 +159,30 @@ Common issues encountered in production ML systems:
 
 ![Real World ML](real-world-ml.png)
 
-## MLflow, Model Registry & Reproducibility
+### F. MLflow, Model Registry & Reproducibility
 
 Tools and practices for managing models in production.
 
 ● Identify the best practices of an MLOps strategy
+
 ● Identify the advantages of using ML runtimes
+
 ● Identify benefits of registering models in the Unity Catalog registry over the workspace
 registry
+
 ● Identify scenarios where promoting code is preferred over promoting models and vice
 versa
+
 ● Set or remove a tag for a model
+
 ● Promote a challenger model to a champion model using aliases
+
 ● Identify the best run using the MLflow Client API.
+
 ● Manually log metrics, artifacts, and models in an MLflow Run.
+
 ● Identify information available in the MLFlow UI
+
 ● Register a model using the MLflow Client API in the Unity Catalog registry
 
 - Experiment tracking
@@ -185,12 +193,12 @@ versa
 - Reproducible training pipelines
 - Model promotion workflows (Dev → Staging → Production)
 
-
 - Paper [MLflow: A Platform for Managing the Machine Learning Lifecycle]()
 - Paper [KeystoneML: Optimizing Pipelines for Large-Scale Advanced Analytics]()
 
+----
 
-## Handling Big Training datasets:
+# 3. Handling Big Training datasets:
 
 Spark for data preparation, model training, and deployment, while also gaining hands-on experience with Spark ML and pandas APIs on Spark. This course will introduce you to advanced concepts like hyperparameter tuning and scaling Optuna with Spark.
 
@@ -223,7 +231,7 @@ Spark for data preparation, model training, and deployment, while also gaining h
 
 ---
 
-# 3. MLOps in Databricks 
+# 4. MLOps in Databricks 
 
  CI/CD, pipeline management, and environment separation, while showcasing Databricks’ tools for automation and infrastructure management, such as Databricks Asset Bundles (DABs), Workflows, and Mosaic AI Model Serving. You will learn about monitoring, custom metrics, drift detection, model rollout strategies, A/B testing, and the principles of reliable MLOps systems, providing a holistic view of implementing and managing ML projects in Databricks.
  
@@ -256,7 +264,7 @@ Topics include:
 
 ----
 
-# 4. Large Language Models (LLMs)
+# 5. Large Language Models (LLMs)
 
 Notes and experiments related to:
 
