@@ -73,6 +73,8 @@ appropriate.
 
 **Training a baseline model:**
 
+● Choose the most appropriate metric for a given scenario objective
+
 ● Identify how AutoML facilitates model/feature selection.
 
 ● Identify the advantages AutoML brings to the model development process
@@ -81,6 +83,7 @@ appropriate.
 
 
 **Decision Trees and Ensemble Models:** 
+
 
 ● Use ML foundations to select the appropriate algorithm for a given model scenario
 
@@ -118,11 +121,8 @@ performance
 ● Identify the number of models being trained in conjunction with a grid-search and
 cross-validation process.
 
-● Choose the most appropriate metric for a given scenario objective
-
 ● Identify the need to exponentiate log-transformed variables before calculating evaluation
 metrics or interpreting predictions
-
 
 
 ####  E. Feature Store
