@@ -1,4 +1,4 @@
-### Data Science with Databricks 
+### Machine Learning with Databricks 
 
 This repository contains structured notes, guides, and references for developing expertise in the **Databricks platform** and implementing **end-to-end Machine Learning production systems**.
 
