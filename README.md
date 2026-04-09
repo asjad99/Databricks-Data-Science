@@ -1,4 +1,4 @@
-### Data Science in Cloud 
+### Data Science with Databricks 
 
 This repository contains structured notes, guides, and references for developing expertise in the **Databricks platform** and implementing **end-to-end Machine Learning production systems**.
 
@@ -34,28 +34,35 @@ This section focuses on the lifecycle of developing and deploying machine learni
 
 TODO: add from .tex file 
 
+Core ML concepts and workflows including:
 
 
-### Data preprocessing
+### A. Data preprocessing
+
+● Compute summary statistics on a Spark DataFrame using .summary() or dbutils data
+summaries
+● Remove outliers from a Spark DataFrame based on standard deviation or IQR
+● Create visualizations for categorical or continuous features
+● Compare two categorical or two continuous features using the appropriate method
+● Compare and contrast imputing missing values with the mean or median or mode value
+● Impute missing values with the mode, mean, or median value
+● Use one-hot encoding for categorical features
+● Identify and explain the model types or data sets for which one-hot encoding is or is not
+appropriate.
+● Identify scenarios where log scale transformation is appropriate
 
 
 ###  Feature engineering
 
+- Feature engineering Methods and workflows for extracting useful signals from raw data.
+
+- Feature Store 
 
 ### Modeling and Hyperparameter tuning 
 
-Core ML concepts and workflows including:
-
-- Feature engineering Methods and workflows for extracting useful signals from raw data.
-
-Topics include:
-        - Feature engineering pipelines
-        - Feature stores
 
 - Training workflows
 - Evaluation strategies
-
-
 
 
 ## Real-World Machine Learning Challenges
@@ -77,9 +84,8 @@ Tools and practices for managing models in production.
 
 - Experiment tracking
 - Reproducibility
-
-  - Model versioning
-  - Model registry
+- Model versioning
+- Model registry
 - ML lifecycle management
 - Reproducible training pipelines
 - Model promotion workflows (Dev → Staging → Production)
@@ -92,6 +98,33 @@ Tools and practices for managing models in production.
 ## Handling Big Training datasets:
 
 Spark for data preparation, model training, and deployment, while also gaining hands-on experience with Spark ML and pandas APIs on Spark. This course will introduce you to advanced concepts like hyperparameter tuning and scaling Optuna with Spark.
+
+**Machine Learning Development with Spark**
+
+- A Brief Overview of Spark Architecture for Machine Learning
+- Introduction to Spark ML for Model Development
+- Model Tracking and Packaging with MLflow and Unity Catalog on Databricks
+- Model Development with Spark
+- Model Tuning with Optuna on Spark
+- Overview of Hyperparameter Tuning
+- Introduction to Optuna on Spark
+- Model Tuning with Optuna
+
+**Advanced Machine Learning Operations**
+
+- Overview of Machine Learning Operations on Databricks
+- Review of MLOps
+- Streamlining Development to Deployment
+- Continuous Workflows for Machine Learning Operations
+- Streamlining MLOps
+- Streamlining MLOps with Databricks
+- Testing Strategies with Databricks
+- Automate Comprehensive Testing
+- Model Rollout Strategies with Databricks
+- Model Quality and Lakehouse Monitoring
+- Introduction to Monitoring
+- Lakehouse Monitoring
+- Streamlining Multiple Environment Deployments - DABsBuild ML assets as CodeCourse Summary and Next Steps
 
 ---
 
