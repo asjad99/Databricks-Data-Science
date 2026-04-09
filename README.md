@@ -8,52 +8,23 @@ Databricks is essentially:
 
 Spark + Delta Lake + MLflow + Cloud orchestration
 
-## How data is processed (Spark and SQL)
+Some notes can be found in Building Data Products with Databricks 
 
-- Paper [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing to understand Spark’s philosophy]()
-- Paper [Spark SQL: Relational Data Processing in Spark to understand modern APIs]()
-- Paper [Structured Streaming: A Declarative API for Real-Time Applications in Apache Spark]()
-- Paper [MapReduce: Simplified Data Processing on Large Clusters]()
-- Paper [Catalyst: A Query Optimization Framework for Spark SQL]()
-
-  
-## Delta Lake and Unity Catalog
-
-- Paper [Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores]()
-- Paper [The Databricks Lakehouse Platform]()
-- Paper [The Google File System]()
+# 1. Dashboards 
 
 
-Key components for managing data and model assets within Databricks.
 
-Topics include:
+----
 
-- **Kimball Data Modeling**
-- **Medallion Architecture**
-  - Bronze → Silver → Gold data layers
-- **Unity Catalog**
-  - Access control and permissions management
-  - Data lineage tracking
-  - Model lineage tracking
-    
-- **Data governance**
-- **Model governance**
-
-# Machine Learning
-
-TODO: add from blog posts, .tex file 
-
-# Platform Architecture
-
-![](big_picture.png)
+# 2. Machine Learning
 
 
-**Introduction:**
+**Introduction and Fundamentals:**
 
 This section focuses on the lifecycle of developing and deploying machine learning models.
 
 
-- [Long intro to machine learning]()
+- BLog post [Long intro to machine learning]()
 - Paper [A Few Useful Things to Know About Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 - Book Chapter [Chapter 5: Machine Learning Basics] 
 - Book [Think Stats (For EDA)]
@@ -61,9 +32,17 @@ This section focuses on the lifecycle of developing and deploying machine learni
 - Book [Designing Machine Learning Systems]
 - Paper [Machine Learning Operations (MLOps): Overview, Definition, and Architecture](https://epub.uni-bayreuth.de/id/eprint/7577/1/Machine_Learning_Operations_MLOps_Overview_Definition_and_Architecture.pdf)
 
+TODO: add from .tex file 
 
-## Fundamentals
 
+
+### Data preprocessing
+
+
+###  Feature engineering
+
+
+### Modeling and Hyperparameter tuning 
 
 Core ML concepts and workflows including:
 
@@ -72,22 +51,12 @@ Core ML concepts and workflows including:
 Topics include:
         - Feature engineering pipelines
         - Feature stores
-        - Data preprocessing
-        - Dataset versioning
 
 - Training workflows
 - Evaluation strategies
-- Experiment tracking
-- Reproducibility
 
-## Large Language Models (LLMs)
 
-Notes and experiments related to:
 
-- Prompt engineering
-- LLM evaluation
-- RAG pipelines
-- LLM deployment patterns on Databricks
 
 ## Real-World Machine Learning Challenges
 
@@ -102,35 +71,35 @@ Common issues encountered in production ML systems:
 
 ![Real World ML](real-world-ml.png)
 
-## Model Registry & Reproducibility
-
-- Paper [MLflow: A Platform for Managing the Machine Learning Lifecycle]()
-- Paper [KeystoneML: Optimizing Pipelines for Large-Scale Advanced Analytics]()
-
+## MLflow, Model Registry & Reproducibility
 
 Tools and practices for managing models in production.
 
-- **MLflow**
-  - Experiment tracking
+- Experiment tracking
+- Reproducibility
+
   - Model versioning
   - Model registry
 - ML lifecycle management
 - Reproducible training pipelines
 - Model promotion workflows (Dev → Staging → Production)
 
-# Jobs & Pipelines
 
-Automation and orchestration of ML workflows in Databricks.
+- Paper [MLflow: A Platform for Managing the Machine Learning Lifecycle]()
+- Paper [KeystoneML: Optimizing Pipelines for Large-Scale Advanced Analytics]()
 
-Topics include:
 
-- Databricks Jobs
-- Training pipelines
-- Batch and real-time inference workflows
-- Pipeline orchestration
-- Feature pipelines
-- Model serving in production environments
-- Integration with external systems
+## Handling Big Training datasets:
+
+Spark for data preparation, model training, and deployment, while also gaining hands-on experience with Spark ML and pandas APIs on Spark. This course will introduce you to advanced concepts like hyperparameter tuning and scaling Optuna with Spark.
+
+---
+
+# 3. MLOps in Databrikcs 
+
+ CI/CD, pipeline management, and environment separation, while showcasing Databricks’ tools for automation and infrastructure management, such as Databricks Asset Bundles (DABs), Workflows, and Mosaic AI Model Serving. You will learn about monitoring, custom metrics, drift detection, model rollout strategies, A/B testing, and the principles of reliable MLOps systems, providing a holistic view of implementing and managing ML projects in Databricks.
+
+ 
 
 # Model Monitoring & Observability
 
@@ -145,7 +114,7 @@ Topics include:
 - Observability dashboards
 - Alerting systems
 
-# Alerts & Automation
+**Alerts & Automation**
 
 Operational tooling for reliable ML systems.
 
@@ -157,24 +126,21 @@ Topics include:
 - Alerting mechanisms
 - Migration and system upgrade support
 
-# Git & CI/CD
 
-Best practices for version control and continuous delivery of ML systems.
+----
 
-Topics include:
+# 4. Large Language Models (LLMs)
 
-- Git workflows for ML projects
-- CI/CD pipelines
-- Automated testing
-- Infrastructure and model deployment
-- Environment reproducibility
+Notes and experiments related to:
 
+- Prompt engineering
+- LLM evaluation
+- RAG pipelines
+- LLM deployment patterns on Databricks
 
+  
 
-
-
-
-### Databricks
+### Appendix A: Databricks
 
 - [The Big Book of MLOps](https://blog.infocruncher.com/resources/ml-productionisation/The%20Big%20Book%20of%20MLOps%20(Databricks,%20v6,%202022).pdf)
 - [MLOps workflows on Databricks](https://docs.databricks.com/aws/en/machine-learning/mlops/mlops-workflow)
@@ -182,9 +148,16 @@ Topics include:
 - [Databricks Asset Bundles resources](https://docs.databricks.com/aws/en/dev-tools/bundles/resources)
 - [GenAI](GenAI-Databricks.md)
 
-### Resources
+
+### Appendix B: Resources
 
 - [Designing machine learning systems](https://github.com/chiphuyen/dmls-book/blob/main/resources.md)
 - [MLOps-Tools]()
 - [IEEE MLOPS](https://ieeexplore.ieee.org/document/10081336)
 - [CMU Machine Learning in Production](https://ckaestne.github.io/seai/)
+
+
+# Appendix C: Platform Architecture
+
+![](big_picture.png)
+
